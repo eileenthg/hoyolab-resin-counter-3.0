@@ -8,9 +8,10 @@ Hoyolab real-time notes feature but on desktop.
 
 ## Features
 - Shows your current resin
-- Shows how much time until resin is full + what time (MM/DD/YY, HH:MM:SS)
+- Shows how much time until resin is full + when it caps (MM/DD/YY, HH:MM:SS)
+- Shows number of commissions completed
 - Shows realm currency
-- Shows how much time until realm currency is full + what time (MM/DD/YY, HH:MM:SS)
+- Shows how much time until realm currency is full + when it caps (MM/DD/YY, HH:MM:SS)
 - Shows number of expeditions completed
 - Super duper fast resin checking after you have setup your account
 
@@ -21,20 +22,20 @@ Hoyolab real-time notes feature but on desktop.
 
 ### Adding your account
 - Login to your account on https://www.hoyolab.com
-- Right click hoyolab-resin-counter.py and "Edit with IDLE" -> "Edit with IDLE"
+- Right click real-time-notes.py and "Edit with IDLE" -> "Edit with IDLE"
 - Put in your uid at UID HERE. (Replace 800000000)
 ![image](https://user-images.githubusercontent.com/40307498/190306694-6928ced4-d644-4ad9-9ade-dc7fd1c955e7.png)
 
 ## Running hoyolab-resin-counter
 - Whenever you want to check your resin (or other things), open up a command prompt
 - Type ```pip install genshin```
-- Head toward the directory where hoyolab-resin-counter.py is located using the ```cd``` command
+- Head toward the directory where real-time-notes.py is located using the ```cd``` command
 - For example
 ```cd C:\Users\eteil.000\Documents```
 - Then type ```pip install genshinstats```
 - Then run the tool by typing ```python real-time-notes.py```
 - You should be able to see the results, an example of what you should see is shown below  
-![image](https://user-images.githubusercontent.com/40307498/190309229-74892ac6-d941-4c99-9d69-f70543f4627c.png)
+![image](https://user-images.githubusercontent.com/40307498/190310649-282b47b6-6516-4993-8387-eda21f00e3f1.png)
 - This tool does not receive data in real-time, when you want to check again, press the upward arrow button on your keyboard to run the command again, or type ```python real-time-notes.py```
 - If you don't want to do the directory thing all over again, just leave the command prompt opened
 
@@ -43,5 +44,5 @@ Hoyolab real-time notes feature but on desktop.
 ### Why make this
 - Real-time notes feature only on hoyolab app but not desktop version
 - Even using the app, I have to make 1000 taps to reach the real-time notes menu
-  - added by eileenthg: HoYoLAB has waaay too many ads these days
+  - ++HoYoLAB has waaay too many ads these days
 - I don't play on my phone and I use my laptop most of the time, so I always forget checking my resin
