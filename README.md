@@ -8,9 +8,9 @@ Hoyolab real-time notes feature but on desktop.
 
 ## Features
 - Shows your current resin
-- Shows how much time until resin is full
+- Shows how much time until resin is full + what time (MM/DD/YY, HH:MM:SS)
 - Shows realm currency
-- Shows how much time until realm currency is full
+- Shows how much time until realm currency is full + what time (MM/DD/YY, HH:MM:SS)
 - Shows number of expeditions completed
 - Super duper fast resin checking after you have setup your account
 
