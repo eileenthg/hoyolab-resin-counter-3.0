@@ -17,7 +17,7 @@ Hoyolab real-time notes feature but on desktop.
 ## Setting up hoyolab-resin-counter
 - Download and install python from https://www.python.org/downloads (Remember to check "Add Python to PATH")
 - If popped up, click "Disable PATH length limit"
-- Download the latest realease of ```real-time-notes.py``` and place it somewhere
+- Download the latest realease of [real-time-notes.py](https://github.com/eileenthg/hoyolab-resin-counter-3.0/blob/main/real-time-notes.py) and place it somewhere
 
 ### Adding your account
 - Login to your account on https://www.hoyolab.com
