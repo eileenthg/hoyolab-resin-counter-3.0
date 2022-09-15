@@ -40,7 +40,7 @@ Hoyolab real-time notes feature but on desktop.
 - If you don't want to do the directory thing all over again, just leave the command prompt opened
 
 ## Other things
-- User data is obtained using https://github.com/thesadru/genshinstats
+- User data is obtained using [https://github.com/thesadru/genshin.py](https://github.com/thesadru/genshin.py)
 ### Why make this
 - Real-time notes feature only on hoyolab app but not desktop version
 - Even using the app, I have to make 1000 taps to reach the real-time notes menu
