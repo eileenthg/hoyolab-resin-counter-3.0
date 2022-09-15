@@ -34,7 +34,6 @@ Hoyolab的實時便籤功能，但在電腦上實現。
 - 透過 ```cd``` 指令來進入 real-time-notes.py 所在的資料夾
 - 例如：
 ```cd C:\Users\eteil.000\Documents```
-- 然後打 ```pip install genshinstats```
 - 接著使用 ```python real-time-notes.py``` 指令來執行hoyolab-resin-counter
 - 下面是你在運行指令後應該在命令視窗應該見到的畫面：  
 ![image](https://user-images.githubusercontent.com/40307498/190310649-282b47b6-6516-4993-8387-eda21f00e3f1.png)
