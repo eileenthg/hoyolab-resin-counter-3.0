@@ -43,5 +43,5 @@ Hoyolab real-time notes feature but on desktop.
 ### Why make this
 - Real-time notes feature only on hoyolab app but not desktop version
 - Even using the app, I have to make 1000 taps to reach the real-time notes menu
-  - [added by eileenthg: HoYoLAB has waaay too many ads these days]
+  - added by eileenthg: HoYoLAB has waaay too many ads these days
 - I don't play on my phone and I use my laptop most of the time, so I always forget checking my resin
