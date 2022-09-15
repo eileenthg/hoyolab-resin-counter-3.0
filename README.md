@@ -30,11 +30,11 @@ Hoyolab real-time notes feature but on desktop.
 - Type ```pip install genshin```
 - Head toward the directory where hoyolab-resin-counter.py is located using the ```cd``` command
 - For example
-```cd C:\Users\seria\Documents```
+```cd C:\Users\eteil.000\Documents```
 - Then type ```pip install genshinstats```
 - Then run the tool by typing ```python real-time-notes.py```
 - You should be able to see the results, an example of what you should see is shown below  
-![image](https://user-images.githubusercontent.com/40307498/190306970-e4c6ef24-fc92-42f8-be0d-bc91daa102f3.png)
+![image](https://user-images.githubusercontent.com/40307498/190309229-74892ac6-d941-4c99-9d69-f70543f4627c.png)
 - This tool does not receive data in real-time, when you want to check again, press the upward arrow button on your keyboard to run the command again, or type ```python real-time-notes.py```
 - If you don't want to do the directory thing all over again, just leave the command prompt opened
 
