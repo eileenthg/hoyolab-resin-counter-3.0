@@ -1,20 +1,37 @@
 import asyncio
 import genshin
+from datetime import datetime, timedelta
+from sys import platform
 
 async def main():
-    client = genshin.GenshinClient()
-    cookies = genshin.get_browser_cookies()
-    client.set_cookies(cookies)
+    client = genshin.Client()
+    client.set_browser_cookies() #Must log in with your own account in your web browser.
 
-    notes = await client.get_notes(901211014)
-    time = notes.until_resin_recovery
-    hours, minutes = divmod(time // 60, 60)
+    notes = await client.get_notes(800000000) #UID HERE
+    
+    #print(notes) #only for debugging, if mhy changes the name again.
+    
+    # set current time
+    ini_time_for_now = datetime.now()
+    
+    # resin stats
+    resin_left_time = notes.remaining_resin_recovery_time
+    resin_cap = ini_time_for_now + resin_left_time
+    resin_hours, resin_minutes = divmod(resin_left_time.seconds // 60, 60)
+    
+    # realm currency stats
+    realm_left_time = notes.remaining_realm_currency_recovery_time
+    realm_cap = ini_time_for_now + realm_left_time
+    realm_hours, realm_minutes = divmod(realm_left_time.seconds // 60, 60)
+    
+    # output
     print(f"Current resin: {notes.current_resin}/{notes.max_resin}")
-    print(f"Resin full in {hours:.0f} hours {minutes:.0f} minutes")
-    print(f"Comissions left: {notes.completed_commissions}/{notes.max_comissions}")
+    print(f"Resin full in {resin_hours:.0f} hours {resin_minutes:.0f} minutes at {resin_cap.strftime('%m/%d/%Y, %H:%M:%S')}")
+    print(f"Comissions done: {notes.completed_commissions}/{notes.max_commissions}")
     print(f"Current realm currency: {notes.current_realm_currency}/{notes.max_realm_currency}")
+    print(f"Realm currency full in {realm_hours:.0f} hours {realm_minutes:.0f} minutes at {realm_cap.strftime('%m/%d/%Y, %H:%M:%S')}")
     print(f"Expeditions finished: {sum(expedition.finished for expedition in notes.expeditions)}")
 
-    await client.close()
-
+if platform == 'win32':
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 asyncio.run(main())
